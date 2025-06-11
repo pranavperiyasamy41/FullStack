@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body {
+      background: #222;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .mondrian {
+      display: grid;
+      grid-template-rows: 414px 130px 155px 22px;
+      grid-template-columns: 320px 198px 153px 50px;
+      gap: 9px;
+      background: #000;
+      width: 748px;
+      height: 748px;
+    }
+    .white { background: #F0F1EC; }
+    .red { background: #E72F24; }
+    .black { background: #232629; }
+    .blue { background: #004592; }
+    .yellow { background: #F9D01E; }
+
+    .red {
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+    }
+    .white1 {
+      grid-row: 1 / 2;
+      grid-column: 2 / 5;
+    }
+    .white2 {
+      grid-row: 2 / 4;
+      grid-column: 1 / 2;
+    }
+    .white3 {
+      grid-row: 2 / 4;
+      grid-column: 2 / 4;
+    }
+    .blue {
+      grid-row: 2 / 3;
+      grid-column: 4 / 5;
+      border-bottom: 10px solid #000;
+    }
+    .white4 {
+      grid-row: 3 / 5;
+      grid-column: 4 / 5;
+    }
+    .yellow {
+      grid-row: 4 / 5;
+      grid-column: 2 / 3;
+    }
+    .black {
+      grid-row: 4 / 5;
+      grid-column: 3 / 4;
+    }
+    .white5 {
+      grid-row: 4 / 5;
+      grid-column: 1 / 2;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mondrian">
+    <div class="red"></div>
+    <div class="white white1"></div>
+    <div class="white white2"></div>
+    <div class="white white3"></div>
+    <div class="blue"></div>
+    <div class="white white4"></div>
+    <div class="yellow"></div>
+    <div class="black"></div>
+    <div class="white white5"></div>
+  </div>
+</body>
+
+</html>
